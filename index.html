@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Website Kalkulator Segitiga</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Katik</h1>
+    <h2>Luas dan Keliling Segitiga</h2>
+    <h4>By : Mario</h4>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>Hai Sobat, Selamat datang di Katik!</p>
+      <p>Sebuah aplikasi yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
+    </section>
+
+    <section class="luas-segitiga" id="luas">
+      <h2>Luas Segitiga</h2>
+      <div class="gambar">
+        <img src="asset/segitiga.png" alt="">
+      </div>
+      <p>Rumus Luas Segitiga Yaitu</p>
+      <p class="rumus">L = 1/2 x a x t</p>
+      <p>Dimana :
+        <br>
+        L = Luas
+<br>
+        a = Panjang Alas
+<br>
+        t = Tinggi</p>
+      
+      <form action="" >
+        <div class="input-group">
+          <input type="number" id="alas" placeholder="Nilai Alas" class="input-field">
+        </div>
+        <div class="input-group">
+          <input type="number" id="tinggi" placeholder="Nilai Tinggi" class="input-field">
+        </div>
+        <input  onClick="getLuas()" value="Hitung" class="button" type="button">
+        <input type="reset" value="Reset" class="button">
+      </form>
+      <p >Luas : <span id="luas"></span></p>
+    </section>
+    <section class="Keliling-segitiga" id="keliling">
+         
+        <h2>Keliling Segitiga</h2>
+        <div class="gambar">
+            <img src="asset/segitiga.png" alt="">
+          </div>
+          <p>Rumus Keliling Segitiga Yaitu</p>
+      <p class="rumus">K = A + B + C</p>
+      <p>Dimana :
+        <br>
+        K = Keliling
+<br>
+        A = sisi A
+<br>
+        B = sisi B
+        <br>
+        C = sisi C</p>
+        <form action="">
+          <div class="input-group">
+            <input type="number" id="side1" placeholder="Nilai sisi A" class="input-field">
+          </div>
+          <div class="input-group">
+            <input type="number" id="side2" placeholder="Nilai sisi B" class="input-field">
+          </div>
+          <div class="input-group">
+            <input type="number" id="side3" placeholder="Nilai sisi C" class="input-field">
+          </div>
+          <input  onClick="getKeliling()" value="Hitung" class="button" type="button">
+          <input type="reset" value="Reset" class="button">
+        </form>
+        <p >Keliling : <span id="keliling"></span></p>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mario </p>
+  </footer>
+
+</body>
+</html>
